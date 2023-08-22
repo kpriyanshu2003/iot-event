@@ -6,11 +6,6 @@ import { Link } from "react-router-dom";
 export default function Success() {
   return (
     <div>
-      {/* <div className="ml-24 relative">
-        <div className="absolute top-2 left-7 flex items-center">
-        
-        </div>
-      </div> */}
       <div className="flex items-center md:ml-24 md:mt-10 ml-6 mt-6">
         <img src={icon} alt="" />
         <svg
