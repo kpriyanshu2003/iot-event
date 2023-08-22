@@ -5,16 +5,16 @@ import logo from "../images/vep-logo.svg";
 export default function Login() {
   return (
     <div className="mt-24 flex justify-evenly items-center font-raleway ">
-      <div>
+      <div className="hidden md:block">
         <span className="font-semibold text-2xl">Hey!</span>
         <br />
         <span className="font-bold text-3xl">Welcome back.</span>
         <br />
         <img src={img} alt="Login Icon" className="mt-8" />
       </div>
-      <div className="h-80 w-0.5 bg-gray-300 top-10"></div>
+      <div className="h-80 w-0.5 bg-gray-300 top-10 hidden md:block"></div>
       <div className="mx-12 w-96">
-        <div className="absolute top-24">
+        <div className="md:absolute md:top-24">
           <div>
             <img src={logo} alt="Logo" className="mb-8" />
             <span className="font-semibold text-2xl">
@@ -28,7 +28,7 @@ export default function Login() {
             <br />
           </div>
 
-          <div className="mt-7 min-w-[25rem]">
+          <div className="mt-7 md:min-w-[25rem]">
             <div className="flex items-center rounded-2xl mt-5 bg-[#F2F2F2]">
               <svg
                 width="20"

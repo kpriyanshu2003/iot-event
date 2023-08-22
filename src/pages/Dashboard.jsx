@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import SideBar from "../components/Dashboard/SideBar";
-import Home from "../components/Dashboard/Home";
-import Transaction from "../components/Dashboard/Transactions";
+import SideBar from "../components/SideBar";
+import Home from "../components/Home";
+import Transaction from "../components/Transactions";
 
 export default function Dashboard() {
   const [current, setCurrent] = useState({ page: <Home />, id: 0 });

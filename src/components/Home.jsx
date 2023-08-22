@@ -1,5 +1,5 @@
-import Avatar from "../../images/userAvatar.png";
-import DashImg from "../../images/dashboard-uno.svg";
+import Avatar from "../images/userAvatar.png";
+import DashImg from "../images/dashboard-uno.svg";
 
 export default function Home() {
   return (

@@ -1,6 +1,6 @@
 import items from "./transAction-sample.json";
 import React, { useState } from "react";
-import Avatar from "../../images/userAvatar.png";
+import Avatar from "../images/userAvatar.png";
 
 export default function Transaction() {
   const update = () => {

@@ -1,4 +1,4 @@
-import dashicon from "../../images/dash-logo.svg";
+import dashicon from "../images/dash-logo.svg";
 import { Link } from "react-router-dom";
 
 export default function SideBar(props) {
