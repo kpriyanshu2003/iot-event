@@ -1,17 +1,18 @@
 import Avatar from "../images/userAvatar.png";
 import DashImg from "../images/dashboard-uno.svg";
+import User from "../data/user.json";
 
 export default function Home() {
   return (
     <div className="pr-10">
-      <div className="flex items-center justify-between w-[80rem] font-raleway">
+      <div className="flex items-center justify-between font-raleway">
         <div className=" flex items-center">
           <img src={Avatar} alt="" className="rounded-full w-16 h-16" />
           <div className="ml-4">
-            <span className="font-semibold text-2xl">Hello, Abhijeet!</span>
+            <span className="font-semibold text-2xl">Hello, {User.name}</span>
             <br />
             <span className="font-normal text-base text-[#333333]">
-              @abhijeeeeeeet
+              @{User.username}
             </span>
           </div>
         </div>
@@ -62,7 +63,10 @@ export default function Home() {
             <span className="font-semibold text-base">Wallet Balance</span>
             <br />
             <br />
-            <span className="text-4xl font-semibold">$ 0.00</span>
+            <span className="text-4xl font-semibold">
+              {" "}
+              &#x20B9; {User.balance}
+            </span>
           </div>
           <div className="absolute bottom-0 w-full h-16 bg-[#FFD6FF] flex items-center justify-evenly">
             <span className="font-bold text-sm text-[#BF13BF] uppercase">
@@ -96,7 +100,7 @@ export default function Home() {
               <span className="font-medium text-x;">Wallet</span>
               <br />
               <span className="font-medium text-sm text-[#787878]">
-                USD Wallet
+                {User.wallet} Wallet
               </span>
             </div>
           </div>
@@ -120,7 +124,7 @@ export default function Home() {
               <span className="font-medium text-x;">Transactions</span>
               <br />
               <span className="font-medium text-sm text-[#787878]">
-                209 transactions
+                {User.transactions}
               </span>
             </div>
           </div>
@@ -145,7 +149,7 @@ export default function Home() {
               <span className="font-medium text-x;">Banks Accounts</span>
               <br />
               <span className="font-medium text-sm text-[#787878]">
-                03 Bank accounts
+                {User.bank} Bank accounts
               </span>
             </div>
           </div>
@@ -169,7 +173,7 @@ export default function Home() {
               <span className="font-medium text-x;">Cards</span>
               <br />
               <span className="font-medium text-sm text-[#787878]">
-                03 cards
+                {User.cards} cards
               </span>
             </div>
           </div>

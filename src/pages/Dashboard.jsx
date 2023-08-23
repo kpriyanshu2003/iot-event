@@ -30,9 +30,7 @@ export default function Dashboard() {
       <div className="">
         <SideBar update={update} value={current.id} />
       </div>
-      <div className="h-full w-full absolute inset-0 pl-[150px] pr-[20px] pt-[60px]">
-        {current.page}
-      </div>
+      <div className="ml-32 mt-16 mb-10">{current.page}</div>
     </div>
   );
 }

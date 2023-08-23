@@ -1,0 +1,9 @@
+{
+  "name": "John Doe",
+  "username": "johndoe",
+  "balance": "72,988.00",
+  "cards": 2,
+  "bank": 4,
+  "wallet": "USD",
+  "transactions": 209
+}
