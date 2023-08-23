@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../images/vep-logo.svg";
 import credential from "../images/signup-cred.svg";
 import { Link } from "react-router-dom";
-import signup from "../styles/signup.css"
+import "../styles/signup.css";
 
 export default function Signup() {
   return (
@@ -13,7 +13,11 @@ export default function Signup() {
           <br />
           <span class="left-text-signup-2">Secure your login process</span>
           <br />
-          <img src={credential} alt="Login Icon" class="credential-login-icon" />
+          <img
+            src={credential}
+            alt="Login Icon"
+            class="credential-login-icon"
+          />
         </div>
         <div class="sign-up-block"></div>
         <div class="sign-up-block-2">
@@ -118,13 +122,8 @@ export default function Signup() {
                   />
                 </svg>
               </div>
-              <Link
-                to="/success"
-                class="next-button-sign-up "
-              >
-                <span class="next-button-text-sign-up">
-                  Next
-                </span>
+              <Link to="/success" class="next-button-sign-up ">
+                <span class="next-button-text-sign-up">Next</span>
                 <svg
                   width="20"
                   height="17"

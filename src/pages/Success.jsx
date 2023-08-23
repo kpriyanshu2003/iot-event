@@ -2,7 +2,7 @@ import React from "react";
 import icon from "../images/icon.svg";
 import success from "../images/signup-acc-success.svg";
 import { Link } from "react-router-dom";
-import success_style from "../styles/success_style.css"
+import "../styles/success_style.css";
 
 export default function Success() {
   return (
@@ -48,9 +48,7 @@ export default function Success() {
           </div>
           <Link to="/login">
             <div class="success-login-button">
-              <span class="success-login-button-text">
-                login now
-              </span>
+              <span class="success-login-button-text">login now</span>
               <br />
             </div>
           </Link>

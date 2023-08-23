@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import img from "../images/login.svg";
 import logo from "../images/vep-logo.svg";
-import login from "../styles/login.css"
+import "../styles/login.css";
 
 export default function Login() {
   return (
@@ -18,9 +18,7 @@ export default function Login() {
         <div class="right-container-login">
           <div>
             <img src={logo} alt="Logo" class="nine" />
-            <span class="login-text">
-              Login to your account.
-            </span>
+            <span class="login-text">Login to your account.</span>
             <br />
             <br />
             <span class="Enter-details">
@@ -87,19 +85,13 @@ export default function Login() {
             </div>
 
             <Link to="/dashboard">
-              <input
-                type="submit"
-                value="Login"
-                class="login-button"
-              />
+              <input type="submit" value="Login" class="login-button" />
             </Link>
             <br />
             <div class="sign-up-container">
               <Link to="/signup" class="sign-up-link">
                 <span>Don't have account? </span>
-                <span class="sign-up-text-2">
-                  Sign Up
-                </span>
+                <span class="sign-up-text-2">Sign Up</span>
               </Link>
             </div>
           </div>
