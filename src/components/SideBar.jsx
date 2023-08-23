@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function SideBar(props) {
   return (
-    <div className="fixed z-10 left-0 inset-y-0 w-[80px] h-full grid grid-cols-1 flex-column grid-rows-7 col-span-1 place-items-center shadow-2xl font-raleway">
+    <div className="fixed z-10 left-0 inset-y-0 md:w-[80px] w-[60px] h-full grid grid-cols-1 flex-column grid-rows-7 col-span-1 place-items-center shadow-2xl font-raleway">
       <Link to="/">
         <img src={dashicon} alt="" className="" />
       </Link>

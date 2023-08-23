@@ -7,7 +7,7 @@ export default function Transaction() {
     <div className="font-raleway pr-10">
       <div className="flex items-center justify-between">
         <span className="font-semibold text-2xl">Transactions</span>
-        <div className="flex items-center -ml-20">
+        <div className="hidden md:flex items-center -ml-20">
           <div className="flex items-center ">
             <svg
               width="20"
@@ -48,31 +48,35 @@ export default function Transaction() {
 function TransMain() {
   const itemsT = items.map((i, index) => (
     <div className="grid place-items-center" key={index}>
-      <div className="w-full grid grid-cols-5 text-center items-center justify-evenly font-raleway p-4 whitespace-nowrap">
-        <div className="flex items-center ml-10">
+      <div className="w-full md:grid grid-cols-5 md:text-center items-center justify-evenly font-raleway md:p-4 whitespace-nowrap mt-10 md:mt-0">
+        <div className="flex items-center md:ml-10">
           <img src={Avatar} alt="" className="rounded-full h-10 w-10 mr-2" />
           <span className="text-base font-semibold">
             {handleFrom(i.from, i.type)}
           </span>
         </div>
         <div className="text-base font-medium">
+          <span className="md:hidden">Time: </span>
           {new Date(i.date).toLocaleTimeString("en-US", {
             timeStyle: "short",
             hour12: false,
           })}
         </div>
         <div className="text-base font-medium">
+          <span className="md:hidden">Date: </span>
           {new Date(i.date).toLocaleDateString("en-US", {})}
         </div>
         <div className="text-base font-semibold">
+          <span className="md:hidden">Account: </span>
           {handleAcc(i.account, i.type)}
         </div>
-        <div
-          className={`text-base font-bold text-[#${
-            i.type === "credit" ? "29CC7A" : "333333"
-          }]`}
-        >
-          &#x20B9; {i.amount}
+        <div className="text-base font-bold">
+          <span className="md:hidden">Amount: </span>
+          <span
+            className={`text-[#${i.type === "credit" ? "29CC7A" : "333333"}]`}
+          >
+            &#x20B9; {i.amount}
+          </span>
         </div>
       </div>
       <hr className="w-11/12 text-[#DADADA]" />
@@ -81,12 +85,12 @@ function TransMain() {
 
   return (
     <div>
-      <div className="mt-10 grid gap-5 grid-cols-5 shadow-md text-center w-full rounded-2xl p-3">
-        <div className="">From/To</div>
-        <div className="">Time</div>
-        <div className="">Date</div>
-        <div className="">Account</div>
-        <div className="">Amount</div>
+      <div className="mt-10 md:grid gap-5 grid-cols-5 shadow-md text-center w-full rounded-2xl p-3 hidden">
+        <div>From/To</div>
+        <div>Time</div>
+        <div>Date</div>
+        <div>Account</div>
+        <div>Amount</div>
       </div>
       {itemsT}
     </div>

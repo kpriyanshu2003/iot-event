@@ -5,8 +5,8 @@ import User from "../data/user.json";
 export default function Home() {
   return (
     <div className="pr-10">
-      <div className="flex items-center justify-between font-raleway">
-        <div className=" flex items-center">
+      <div className="md:flex items-center justify-between font-raleway">
+        <div className="flex items-center">
           <img src={Avatar} alt="" className="rounded-full w-16 h-16" />
           <div className="ml-4">
             <span className="font-semibold text-2xl">Hello, {User.name}</span>
@@ -16,7 +16,7 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center mt-6 md:mt-0">
           <div className="flex items-center border border-[#BF13BF] mr-5 w-48 justify-center py-2 rounded-2xl">
             <svg
               width="24"
@@ -57,18 +57,18 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-10 flex items-center justify-between">
-        <div className="h-60 w-[25rem] shadow-md rounded-2xl overflow-hidden relative">
+
+      <div className="mt-10 md:flex items-center justify-between">
+        <div className="h-48 md:h-60 md:w-[25rem] shadow-md rounded-2xl overflow-hidden relative">
           <div className="absolute top-8 left-8">
             <span className="font-semibold text-base">Wallet Balance</span>
             <br />
             <br />
-            <span className="text-4xl font-semibold">
-              {" "}
+            <span className="text-3xl md:text-4xl font-semibold">
               &#x20B9; {User.balance}
             </span>
           </div>
-          <div className="absolute bottom-0 w-full h-16 bg-[#FFD6FF] flex items-center justify-evenly">
+          <div className="absolute bottom-0 w-full md:h-16 h-12 bg-[#FFD6FF] flex items-center justify-evenly">
             <span className="font-bold text-sm text-[#BF13BF] uppercase">
               Withdraw
             </span>
@@ -78,9 +78,8 @@ export default function Home() {
             </span>
           </div>
         </div>
-
-        <div className="grid gap-10 grid-cols-2 grid-rows-2">
-          <div className="flex items-center shadow-md p-5 overflow-hidden rounded-[32px]">
+        <div className="md:grid gap-10 mt-10 md:mt-0 grid-cols-2 grid-rows-2">
+          <div className="flex items-center shadow-md p-5 overflow-hidden rounded-[15px] md:rounded-[32px]  mt-5 md:mt-0">
             <div className="bg-[#333333] rounded-2xl">
               <svg
                 width="50"
@@ -104,7 +103,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="flex items-center shadow-md p-5 overflow-hidden rounded-[32px]">
+          <div className="flex items-center shadow-md p-5 overflow-hidden rounded-[15px] md:rounded-[32px] mt-5 md:mt-0">
             <div className="bg-[#333333] rounded-2xl">
               <svg
                 width="50"
@@ -129,7 +128,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex items-center shadow-md p-5 overflow-hidden rounded-[32px]">
+          <div className="flex items-center shadow-md p-5 overflow-hidden rounded-[15px] md:rounded-[32px]  mt-5 md:mt-0">
             <div className="bg-[#333333] rounded-2xl">
               <svg
                 width="50"
@@ -153,7 +152,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="flex items-center shadow-md p-5 overflow-hidden rounded-[32px]">
+          <div className="flex items-center shadow-md p-5 overflow-hidden rounded-[15px] md:rounded-[32px] mt-5 md:mt-0">
             <div className="bg-[#333333] rounded-2xl">
               <svg
                 width="50"
@@ -180,18 +179,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex items-center justify-evenly mt-5">
-        <div className="w-[25rem] -ml-10">
-          <div>
-            <span className="text-sm font-semibold text-[#787878]">
-              No transactions yet!!!
-            </span>
-          </div>
-          <div>
-            <span className="text-xl font-semibold text-[#787878]">
-              Start making payments through Vep and now you can send Invoice
-              also.
-            </span>
+      <div className="md:flex items-center justify-evenly mt-16 md:mt-5">
+        <div className="md:hidden mb-10">
+          <img src={DashImg} alt="" />
+        </div>
+        <div className="md:w-[25rem] md:-ml-10">
+          <div className="text-xl font-semibold text-[#787878]">
+            Start making payments through Vep and now you can send Invoice also.
           </div>
           <div className="grid gap-3 grid-cols-2 grid-rows-1 mt-5">
             <div className="flex items-center bg-[#BF13BF] justify-center rounded-2xl p-2">
@@ -207,7 +201,7 @@ export default function Home() {
                   fill="white"
                 />
               </svg>
-              <span className="text-white">{"  "}Transfer</span>
+              <span className="text-white">Transfer</span>
             </div>
             <div className="flex items-center shadow-md justify-center rounded-2xl p-2">
               <svg
@@ -222,11 +216,11 @@ export default function Home() {
                   fill="#BF13BF"
                 />
               </svg>
-              <span className="text-[#BF13BF]">{"  "}Send Invoice</span>
+              <span className="text-[#BF13BF]">Send Invoice</span>
             </div>
           </div>
         </div>
-        <div>
+        <div className="hidden md:block">
           <img src={DashImg} alt="" />
         </div>
       </div>
