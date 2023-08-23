@@ -2,11 +2,12 @@ import React from "react";
 import icon from "../images/icon.svg";
 import success from "../images/signup-acc-success.svg";
 import { Link } from "react-router-dom";
+import success_style from "../styles/success_style.css"
 
 export default function Success() {
   return (
     <div>
-      <div className="flex items-center md:ml-24 md:mt-10 ml-6 mt-6">
+      <div class="success-container">
         <img src={icon} alt="" />
         <svg
           width="60"
@@ -33,29 +34,29 @@ export default function Success() {
           />
         </svg>
       </div>
-      <div className="flex justify-center mt-10 font-raleway">
-        <div className="text-center">
+      <div class="success-container-2">
+        <div class="success-container-2-center">
           <div>
-            <span className="font-bold text-3xl">
+            <span class="success-account-created">
               Account created Successfully!!!
             </span>
             <br />
             <br />
-            <span className="font-normal text-base">
+            <span class="login-access-text">
               You can login to your account through the credentials created.
             </span>
           </div>
           <Link to="/login">
-            <div className="mt-8 cursor-pointer">
-              <span className="mt-8 uppercase font-medium text-[#BF32BF]">
+            <div class="success-login-button">
+              <span class="success-login-button-text">
                 login now
               </span>
               <br />
             </div>
           </Link>
-          <img src={success} alt="" className="w-fit mx-auto" />
+          <img src={success} alt="" class="success-img" />
           <br />
-          <div className="flex items-center">
+          <div class="success-img-container">
             <svg
               width="20"
               height="20"
