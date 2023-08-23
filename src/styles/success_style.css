@@ -1,0 +1,56 @@
+.success-container {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    margin-top: 2.5rem;
+    margin-left: 6rem;
+  }
+}
+
+.success-container-2 {
+  display: flex;
+  margin-top: 2.5rem;
+  justify-content: center;
+}
+
+.success-container-2-center {
+  text-align: center;
+}
+
+.success-account-created {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.login-access-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.success-login-button {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.success-login-button-text{
+    margin-top: 2rem; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    color: #BF32BF;
+}
+
+.success-img{
+    width: fit-content; 
+    margin: auto;
+}
+
+.success-img-container{
+    display: flex; 
+align-items: center; 
+
+}

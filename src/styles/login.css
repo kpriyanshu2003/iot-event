@@ -1,0 +1,150 @@
+.app-container-login {
+  display: flex;
+  margin-top: 6rem;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Raleway";
+}
+
+.img-container-login {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.left-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.left-text-2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.login-icon {
+  margin-top: 2rem;
+}
+
+.line-login {
+  display: none;
+  top: 2.5rem;
+  width: 0.125rem;
+  height: 20rem;
+  background-color: #d1d5db;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.seven {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  width: 24rem;
+}
+
+.right-container-login {
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 6rem;
+  }
+}
+
+.nine {
+  margin-bottom: 2rem;
+}
+
+.login-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.Enter-details {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.input-container-login {
+  margin-top: 1.75rem;
+
+  @media (min-width: 768px) {
+  }
+}
+
+.email-container-login {
+  display: flex;
+  margin-top: 1.25rem;
+  align-items: center;
+  border-radius: 1rem;
+  background: #f2f2f2;
+}
+
+.icon {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.email-input {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-style: none;
+  outline-style: none;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.password-input {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-style: none;
+  outline-style: none;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.login-button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1.25rem;
+  border-radius: 1rem;
+  border-style: none;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #bf13bf;
+}
+
+.sign-up-container {
+  margin-top: 2.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+.sign-up-link {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.sign-up-text-2 {
+  font-size: 17px;  
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #bf13bf;
+}

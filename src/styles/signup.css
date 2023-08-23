@@ -1,0 +1,165 @@
+.app-container-signup {
+  display: flex;
+  margin-top: 6rem;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Raleway";
+}
+
+.img-container-signup {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.left-text-signup {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.left-text-signup-2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.credential-login-icon {
+  margin-top: 2rem;
+}
+
+.sign-up-block {
+  display: none;
+  top: 2.5rem;
+  width: 0.125rem;
+  height: 20rem;
+  background-color: #d1d5db;
+
+  @media (min-width: 768px) {
+    display: block;
+    color: #d1dbd1;
+  }
+}
+
+.sign-up-block-2 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  width: 24rem;
+}
+
+.responsive-sign-up-block {
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 6rem;
+  }
+}
+
+.sign-up-logo {
+  margin-bottom: 2rem;
+}
+
+.sign-up-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.register-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.register-container {
+  margin-top: 1.75rem;
+
+  @media (min-width: 768px) {
+  }
+}
+
+.enter-email-container {
+  display: flex;
+  margin-top: 1.25rem;
+  align-items: center;
+  border-radius: 1rem;
+  background: #f2f2f2;
+}
+
+.sign-up-logo-size {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+
+.email-input {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-style: none;
+  outline-style: none;
+  width: 100%;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.set-password{
+  display: flex; 
+margin-top: 1.25rem; 
+align-items: center; 
+border-radius: 1rem; 
+background: #F2F2F2;
+}
+
+.set-password-confirm{
+  display: flex; 
+margin-top: 1.25rem; 
+align-items: center; 
+border-radius: 1rem; 
+background: #F2F2F2;
+}
+
+.password-input {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-style: none;
+  outline-style: none;
+  width: 100%;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.confirm-password-input {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-style: none;
+  outline-style: none;
+  width: 100%;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.next-button-sign-up {
+  display: flex;
+  margin-top: 2.5rem;
+  align-items: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  background: #bf13bf;
+}
+
+.next-button-text-sign-up {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-width: 1px;
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.next-arrow{
+  margin-left: -2.5rem; 
+}
