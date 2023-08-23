@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SideBar from "../components/SideBar";
 import Home from "../components/Home";
 import Transaction from "../components/Transactions";
+import "../styles/dashboard.css"
 
 export default function Dashboard() {
   const [current, setCurrent] = useState({ page: <Home />, id: 0 });
@@ -30,7 +31,7 @@ export default function Dashboard() {
       <div className="">
         <SideBar update={update} value={current.id} />
       </div>
-      <div className="md:ml-32 ml-24 mt-16 mb-10">{current.page}</div>
+      <div class="dashboard-container">{current.page}</div>
     </div>
   );
 }

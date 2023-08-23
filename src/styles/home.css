@@ -1,0 +1,285 @@
+.home-container {
+  padding-right: 2.5rem;
+}
+
+.home-top {
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway";
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.home-section {
+  display: flex;
+  align-items: center;
+}
+
+.home-avatar {
+  border-radius: 9999px;
+  width: 4rem;
+  height: 4rem;
+}
+
+.hello-user {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.home-username {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #333333;
+}
+
+.invoice-container {
+  display: flex;
+  margin-top: 1.5rem;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.invoice {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-right: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border-width: 1px;
+  width: 12rem;
+  border-color: #bf13bf;
+}
+
+.invoice-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #bf13bf;
+}
+
+.transfer-container {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  width: 12rem;
+  background: #bf13bf;
+}
+
+.transfer-text {
+  border-style: none;
+  outline-style: none;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.quick-select-container {
+  margin-top: 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.wallet-balance {
+  overflow: hidden;
+  position: relative;
+  border-radius: 1rem;
+  height: 12rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  @media (min-width: 768px) {
+    width: 25rem;
+  }
+}
+
+.wallet-balance-text-pos {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.wallet-balance-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.wallet-balance-currency {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+
+  @media (min-width: 768px) {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.wallet-balance-btn-container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  background: #ffd6ff;
+
+  @media (min-width: 768px) {
+    height: 4rem;
+  }
+}
+
+.wallet-balance-btn {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #bf13bf;
+}
+
+.wallet-balance-line {
+  width: 0.125rem;
+  height: 2rem;
+  background: #cc8fc2;
+}
+
+.nav-container {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+
+  @media (min-width: 768px) {
+    display: grid;
+  }
+}
+
+.one {
+  display: flex;
+  overflow: hidden;
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.nav-container-btn {
+  display: flex;
+  overflow: hidden;
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.one {
+  background-color: #333333;
+  border-radius: 1rem;
+}
+
+.nav-container-icon {
+  padding: 0.75rem;
+}
+
+.nav-container-text {
+  font-weight: 500;
+}
+
+.nav-container-subtext {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #787878;
+}
+
+.home-bottom-container {
+  margin-top: 4rem;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    display: flex;
+    margin-top: 1.25rem;
+  }
+}
+
+.home-bottom-container-respon {
+  margin-bottom: 2.5rem;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.home-bottom-left-btn-container {
+  @media (min-width: 768px) {
+    margin-left: -2.5rem;
+    width: 25rem;
+  }
+}
+
+.home-bottom-left-text {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: #787878;
+}
+
+.home-bottom-left-btn {
+  display: grid;
+  margin-top: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.home-bottom-left-transfer {
+  color: #ffffff;
+}
+
+.home-bottom-left-invoice-btn {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.home-bottom-left-invoice {
+  color: #bf13bf;
+}
+
+.bottom-img-responsive {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import SideBar from "./User/SideBar";
 import Details from "./User/Details";
 import Cards from "./User/Cards";
+import "../styles/user.css"
 
 export default function User() {
   const update = (n) => {
@@ -28,12 +29,12 @@ export default function User() {
     id: 0,
   });
   return (
-    <div className="flex items-top font-raleway pr-10">
-      <div className="w-2/12">
+    <div class="user-container">
+      <div class="user-container-width">
         <SideBar update={update} value={current.id} />
       </div>
-      <div className="h-[600px] w-0.5 bg-[#DADADA] mx-10"></div>
-      <div className="w-10/12 ">{current.page}</div>
+      <div class="user-container-pos"></div>
+      <div class="user-container-width-current ">{current.page}</div>
     </div>
   );
 }

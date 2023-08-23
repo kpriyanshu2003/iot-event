@@ -1,0 +1,21 @@
+.user-container{
+    display: flex; 
+padding-right: 2.5rem; 
+font-family: 'Raleway';
+}
+
+.user-container-width{
+    width: 16.666667%; 
+}
+
+.user-container-pos{
+    margin-left: 2.5rem;
+margin-right: 2.5rem; 
+width: 0.125rem; 
+height: 600px;
+background: #DADADA;
+}
+
+.user-container-width-current{
+    width: 83.333333%; 
+}

@@ -1,14 +1,15 @@
 import items from "../data/transactions.json";
 import React from "react";
 import Avatar from "../images/userAvatar.png";
+import "../styles/transaction.css";
 
 export default function Transaction() {
   return (
-    <div className="font-raleway pr-10">
-      <div className="flex items-center justify-between">
-        <span className="font-semibold text-2xl">Transactions</span>
-        <div className="hidden md:flex items-center -ml-20">
-          <div className="flex items-center ">
+    <div class="transaction-font">
+      <div class="transaction-top-container">
+        <span class="transaction-top-text">Transactions</span>
+        <div class="transaction-container">
+          <div class="transaction-top-right">
             <svg
               width="20"
               height="20"
@@ -21,9 +22,9 @@ export default function Transaction() {
                 fill="#BF13BF"
               />
             </svg>
-            <span className="text-[#BF13BF] font-normal text-base">Help</span>
+            <span class="transaction-top-right-text">Help</span>
           </div>
-          <div className="ml-10 flex items-center">
+          <div class="ml-10 flex items-center">
             <svg
               width="20"
               height="20"
@@ -36,7 +37,7 @@ export default function Transaction() {
                 fill="#BF13BF"
               />
             </svg>
-            <span className="text-[#BF13BF] font-normal text-base">Share</span>
+            <span class="transaction-top-right-text">Share</span>
           </div>
         </div>
       </div>
@@ -47,45 +48,41 @@ export default function Transaction() {
 
 function TransMain() {
   const itemsT = items.map((i, index) => (
-    <div className="grid place-items-center" key={index}>
-      <div className="w-full md:grid grid-cols-5 md:text-center items-center justify-evenly font-raleway md:p-4 whitespace-nowrap mt-10 md:mt-0">
-        <div className="flex items-center md:ml-10">
-          <img src={Avatar} alt="" className="rounded-full h-10 w-10 mr-2" />
-          <span className="text-base font-semibold">
-            {handleFrom(i.from, i.type)}
-          </span>
+    <div class="transaction-grid" key={index}>
+      <div class="transaction-items-container">
+        <div class="transaction-items">
+          <img src={Avatar} alt="" class="rounded-full h-10 w-10 mr-2" />
+          <span class="transaction-semibold">{handleFrom(i.from, i.type)}</span>
         </div>
-        <div className="text-base font-medium">
-          <span className="md:hidden">Time: </span>
+        <div class="transaction-medium">
+          <span class="transaction-hidden">Time: </span>
           {new Date(i.date).toLocaleTimeString("en-US", {
             timeStyle: "short",
             hour12: false,
           })}
         </div>
-        <div className="text-base font-medium">
-          <span className="md:hidden">Date: </span>
+        <div class="transaction-medium">
+          <span class="transaction-hidden">Date: </span>
           {new Date(i.date).toLocaleDateString("en-US", {})}
         </div>
-        <div className="text-base font-semibold">
-          <span className="md:hidden">Account: </span>
+        <div class="transaction-semibold">
+          <span class="transaction-hidden">Account: </span>
           {handleAcc(i.account, i.type)}
         </div>
-        <div className="text-base font-bold">
-          <span className="md:hidden">Amount: </span>
-          <span
-            className={`text-[#${i.type === "credit" ? "29CC7A" : "333333"}]`}
-          >
+        <div class="transaction-bold">
+          <span class="transaction-hidden">Amount: </span>
+          <span class={`text-[#${i.type === "credit" ? "29CC7A" : "333333"}]`}>
             &#x20B9; {i.amount}
           </span>
         </div>
       </div>
-      <hr className="w-11/12 text-[#DADADA]" />
+      <hr class="transaction-line" />
     </div>
   ));
 
   return (
     <div>
-      <div className="mt-10 md:grid gap-5 grid-cols-5 shadow-md text-center w-full rounded-2xl p-3 hidden">
+      <div class="transaction-grid-top">
         <div>From/To</div>
         <div>Time</div>
         <div>Date</div>
