@@ -22,18 +22,14 @@
   cursor: pointer;
 }
 
-.sidebar-hover {
-  :hover {
-    fill: #bf13bf;
-    cursor: pointer;
-  }
+.sidebar-hover:hover {
+  fill: #bf13bf;
+  cursor: pointer;
 }
 
-.sidebar-exit-icon-hover {
-  :hover {
-    fill: #bf13bf;
-    cursor: pointer;
-  }
+.sidebar-exit-icon-hover:hover {
+  fill: #bf13bf;
+  cursor: pointer;
 }
 
 .sidebar-exit-icon {
