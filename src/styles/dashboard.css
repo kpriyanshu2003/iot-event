@@ -1,0 +1,9 @@
+.dashboard-container {
+  margin-bottom: 2.5rem;
+  margin-top: 4rem;
+  margin-left: 6rem;
+
+  @media (min-width: 768px) {
+    margin-left: 8rem;
+  }
+}
