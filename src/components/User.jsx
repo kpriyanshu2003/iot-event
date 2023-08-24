@@ -2,7 +2,7 @@ import { useState } from "react";
 import SideBar from "./User/SideBar";
 import Details from "./User/Details";
 import Cards from "./User/Cards";
-import "../styles/user.css"
+import "../styles/user.css";
 
 export default function User() {
   const update = (n) => {
@@ -29,12 +29,12 @@ export default function User() {
     id: 0,
   });
   return (
-    <div class="user-container">
-      <div class="user-container-width">
+    <div className="user-container">
+      <div className="user-container-width">
         <SideBar update={update} value={current.id} />
       </div>
-      <div class="user-container-pos"></div>
-      <div class="user-container-width-current ">{current.page}</div>
+      <div className="user-container-pos"></div>
+      <div className="user-container-width-current ">{current.page}</div>
     </div>
   );
 }

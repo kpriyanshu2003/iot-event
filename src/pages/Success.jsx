@@ -7,7 +7,7 @@ import "../styles/success_style.css";
 export default function Success() {
   return (
     <div>
-      <div class="success-container">
+      <div className="success-container">
         <img src={icon} alt="" />
         <svg
           width="60"
@@ -34,27 +34,27 @@ export default function Success() {
           />
         </svg>
       </div>
-      <div class="success-container-2">
-        <div class="success-container-2-center">
+      <div className="success-container-2">
+        <div className="success-container-2-center">
           <div>
-            <span class="success-account-created">
+            <span className="success-account-created">
               Account created Successfully!!!
             </span>
             <br />
             <br />
-            <span class="login-access-text">
+            <span className="login-access-text">
               You can login to your account through the credentials created.
             </span>
           </div>
           <Link to="/login">
-            <div class="success-login-button">
-              <span class="success-login-button-text">login now</span>
+            <div className="success-login-button">
+              <span className="success-login-button-text">login now</span>
               <br />
             </div>
           </Link>
-          <img src={success} alt="" class="success-img" />
+          <img src={success} alt="" className="success-img" />
           <br />
-          <div class="success-img-container">
+          <div className="success-img-container">
             <svg
               width="20"
               height="20"

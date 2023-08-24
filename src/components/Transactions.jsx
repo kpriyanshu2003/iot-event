@@ -5,11 +5,11 @@ import "../styles/transaction.css";
 
 export default function Transaction() {
   return (
-    <div class="transaction-font">
-      <div class="transaction-top-container">
-        <span class="transaction-top-text">Transactions</span>
-        <div class="transaction-container">
-          <div class="transaction-top-right">
+    <div className="transaction-font">
+      <div className="transaction-top-container">
+        <span className="transaction-top-text">Transactions</span>
+        <div className="transaction-container">
+          <div className="transaction-top-right">
             <svg
               width="20"
               height="20"
@@ -22,9 +22,9 @@ export default function Transaction() {
                 fill="#BF13BF"
               />
             </svg>
-            <span class="transaction-top-right-text">Help</span>
+            <span className="transaction-top-right-text">Help</span>
           </div>
-          <div class="ml-10 flex items-center">
+          <div className="ml-10 flex items-center">
             <svg
               width="20"
               height="20"
@@ -37,7 +37,7 @@ export default function Transaction() {
                 fill="#BF13BF"
               />
             </svg>
-            <span class="transaction-top-right-text">Share</span>
+            <span className="transaction-top-right-text">Share</span>
           </div>
         </div>
       </div>
@@ -48,41 +48,43 @@ export default function Transaction() {
 
 function TransMain() {
   const itemsT = items.map((i, index) => (
-    <div class="transaction-grid" key={index}>
-      <div class="transaction-items-container">
-        <div class="transaction-items">
-          <img src={Avatar} alt="" class="rounded-full h-10 w-10 mr-2" />
-          <span class="transaction-semibold">{handleFrom(i.from, i.type)}</span>
+    <div className="transaction-grid" key={index}>
+      <div className="transaction-items-container">
+        <div className="transaction-items">
+          <img src={Avatar} alt="" className="rounded-full h-10 w-10 mr-2" />
+          <span className="transaction-semibold">
+            {handleFrom(i.from, i.type)}
+          </span>
         </div>
-        <div class="transaction-medium">
-          <span class="transaction-hidden">Time: </span>
+        <div className="transaction-medium">
+          <span className="transaction-hidden">Time: </span>
           {new Date(i.date).toLocaleTimeString("en-US", {
             timeStyle: "short",
             hour12: false,
           })}
         </div>
-        <div class="transaction-medium">
-          <span class="transaction-hidden">Date: </span>
+        <div className="transaction-medium">
+          <span className="transaction-hidden">Date: </span>
           {new Date(i.date).toLocaleDateString("en-US", {})}
         </div>
-        <div class="transaction-semibold">
-          <span class="transaction-hidden">Account: </span>
+        <div className="transaction-semibold">
+          <span className="transaction-hidden">Account: </span>
           {handleAcc(i.account, i.type)}
         </div>
-        <div class="transaction-bold">
-          <span class="transaction-hidden">Amount: </span>
+        <div className="transaction-bold">
+          <span className="transaction-hidden">Amount: </span>
           <span class={`text-[#${i.type === "credit" ? "29CC7A" : "333333"}]`}>
             &#x20B9; {i.amount}
           </span>
         </div>
       </div>
-      <hr class="transaction-line" />
+      <hr className="transaction-line" />
     </div>
   ));
 
   return (
     <div>
-      <div class="transaction-grid-top">
+      <div className="transaction-grid-top">
         <div>From/To</div>
         <div>Time</div>
         <div>Date</div>

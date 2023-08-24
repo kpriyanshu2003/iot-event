@@ -90,6 +90,11 @@
   margin-right: 1rem;
 }
 
+.icon-size {
+  width: 2rem;
+  height: 2rem;
+}
+
 .email-input {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -143,8 +148,21 @@
 }
 
 .sign-up-text-2 {
-  font-size: 17px;  
+  font-size: 17px;
   font-weight: 500;
   text-transform: uppercase;
   color: #bf13bf;
+}
+
+.password-container-login {
+  display: flex;
+  margin-top: 1.25rem;
+  align-items: center;
+  border-radius: 1rem;
+  font-weight: 400;
+  background: #f2f2f2;
+}
+
+.password-container-login > div {
+  cursor: pointer;
 }

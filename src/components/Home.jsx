@@ -5,18 +5,18 @@ import "../styles/home.css";
 
 export default function Home() {
   return (
-    <div class="home-container">
-      <div class="home-top">
-        <div class="home-section">
-          <img src={Avatar} alt="" class="home-avatar" />
-          <div class="ml-4">
-            <span class="hello-user">Hello, {User.name}</span>
+    <div className="home-container">
+      <div className="home-top">
+        <div className="home-section">
+          <img src={Avatar} alt="" className="home-avatar" />
+          <div className="ml-4">
+            <span className="hello-user">Hello, {User.name}</span>
             <br />
-            <span class="home-username">@{User.username}</span>
+            <span className="home-username">@{User.username}</span>
           </div>
         </div>
-        <div class="invoice-container">
-          <div class="invoice">
+        <div className="invoice-container">
+          <div className="invoice">
             <svg
               width="24"
               height="24"
@@ -29,9 +29,13 @@ export default function Home() {
                 fill="#BF13BF"
               />
             </svg>
-            <input type="button" value="Send Invoice" class="invoice-text" />
+            <input
+              type="button"
+              value="Send Invoice"
+              className="invoice-text"
+            />
           </div>
-          <div class="transfer-container">
+          <div className="transfer-container">
             <svg
               width="24"
               height="24"
@@ -44,35 +48,37 @@ export default function Home() {
                 fill="white"
               />
             </svg>
-            <input type="button" value="Transfer" class="transfer-text" />
+            <input type="button" value="Transfer" className="transfer-text" />
           </div>
         </div>
       </div>
 
-      <div class="quick-select-container">
-        <div class="wallet-balance">
-          <div class="wallet-balance-text-pos">
-            <span class="wallet-balance-text">Wallet Balance</span>
+      <div className="quick-select-container">
+        <div className="wallet-balance">
+          <div className="wallet-balance-text-pos">
+            <span className="wallet-balance-text">Wallet Balance</span>
             <br />
             <br />
-            <span class="wallet-balance-currency">&#x20B9; {User.balance}</span>
+            <span className="wallet-balance-currency">
+              &#x20B9; {User.balance}
+            </span>
           </div>
-          <div class="wallet-balance-btn-container">
-            <span class="wallet-balance-btn">Withdraw</span>
-            <div class="wallet-balance-line"></div>
-            <span class="wallet-balance-btn">Add Balance</span>
+          <div className="wallet-balance-btn-container">
+            <span className="wallet-balance-btn">Withdraw</span>
+            <div className="wallet-balance-line"></div>
+            <span className="wallet-balance-btn">Add Balance</span>
           </div>
         </div>
-        <div class="nav-container">
-          <div class="nav-container-btn">
-            <div class="bg-[#333333] rounded-2xl">
+        <div className="nav-container">
+          <div className="nav-container-btn">
+            <div className="bg-[#333333] rounded-2xl">
               <svg
                 width="50"
                 height="50"
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="nav-container-icon"
+                className="nav-container-icon"
               >
                 <path
                   d="M6 9C6 8.20435 6.31607 7.44129 6.87868 6.87868C7.44129 6.31607 8.20435 6 9 6H29C29.7956 6 30.5587 6.31607 31.1213 6.87868C31.6839 7.44129 32 8.20435 32 9V10.17C32.5852 10.3769 33.0917 10.7602 33.4499 11.267C33.8081 11.7739 34.0003 12.3793 34 13V31C34 31.7956 33.6839 32.5587 33.1213 33.1213C32.5587 33.6839 31.7956 34 31 34H11C9.67392 34 8.40215 33.4732 7.46447 32.5355C6.52678 31.5979 6 30.3261 6 29V9ZM8 9C8 9.26522 8.10536 9.51957 8.29289 9.70711C8.48043 9.89464 8.73478 10 9 10H30V9C30 8.73478 29.8946 8.48043 29.7071 8.29289C29.5196 8.10536 29.2652 8 29 8H9C8.73478 8 8.48043 8.10536 8.29289 8.29289C8.10536 8.48043 8 8.73478 8 9ZM29 22H27C26.7348 22 26.4804 22.1054 26.2929 22.2929C26.1054 22.4804 26 22.7348 26 23C26 23.2652 26.1054 23.5196 26.2929 23.7071C26.4804 23.8946 26.7348 24 27 24H29C29.2652 24 29.5196 23.8946 29.7071 23.7071C29.8946 23.5196 30 23.2652 30 23C30 22.7348 29.8946 22.4804 29.7071 22.2929C29.5196 22.1054 29.2652 22 29 22Z"
@@ -80,21 +86,23 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <div class="ml-5">
-              <span class="nav-container-text">Wallet</span>
+            <div className="ml-5">
+              <span className="nav-container-text">Wallet</span>
               <br />
-              <span class="nav-container-subtext">{User.wallet} Wallet</span>
+              <span className="nav-container-subtext">
+                {User.wallet} Wallet
+              </span>
             </div>
           </div>
-          <div class="nav-container-btn">
-            <div class="bg-[#333333] rounded-2xl">
+          <div className="nav-container-btn">
+            <div className="bg-[#333333] rounded-2xl">
               <svg
                 width="50"
                 height="50"
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="nav-container-icon"
+                className="nav-container-icon"
               >
                 <path
                   d="M33.445 10.3211C33.6192 10.4643 33.7595 10.6445 33.8556 10.8486C33.9518 11.0526 34.0014 11.2755 34.001 11.5011C34.0021 11.6973 33.9638 11.8917 33.8882 12.0728C33.8126 12.2539 33.7013 12.4179 33.561 12.5551L27.545 18.5631C27.2638 18.844 26.8825 19.0018 26.485 19.0018C26.0875 19.0018 25.7063 18.844 25.425 18.5631C25.2854 18.4241 25.1747 18.2589 25.0991 18.077C25.0236 17.8951 24.9847 17.7 24.9847 17.5031C24.9847 17.3061 25.0236 17.1111 25.0991 16.9292C25.1747 16.7473 25.2854 16.5821 25.425 16.4431L28.889 13.0011H7.501C7.10318 13.0011 6.72165 12.843 6.44034 12.5617C6.15904 12.2804 6.001 11.8989 6.001 11.5011C6.001 11.1032 6.15904 10.7217 6.44034 10.4404C6.72165 10.1591 7.10318 10.0011 7.501 10.0011H28.869L25.433 6.55706C25.2937 6.41811 25.1832 6.25304 25.1079 6.07132C25.0325 5.88961 24.9937 5.6948 24.9937 5.49807C24.9937 5.30133 25.0325 5.10652 25.1079 4.9248C25.1832 4.74309 25.2937 4.57802 25.433 4.43906C25.7143 4.15816 26.0955 4.00039 26.493 4.00039C26.8905 4.00039 27.2718 4.15816 27.553 4.43906L33.445 10.3231V10.3211ZM6.557 27.3211C6.38277 27.4644 6.24252 27.6445 6.14637 27.8486C6.05022 28.0526 6.00057 28.2755 6.001 28.5011C5.99986 28.6973 6.03822 28.8917 6.11382 29.0728C6.18941 29.2539 6.30068 29.4179 6.441 29.5551L12.457 35.5611C12.7383 35.842 13.1195 35.9998 13.517 35.9998C13.9145 35.9998 14.2958 35.842 14.577 35.5611C14.7166 35.4221 14.8273 35.2569 14.9029 35.075C14.9784 34.8931 15.0173 34.698 15.0173 34.5011C15.0173 34.3041 14.9784 34.1091 14.9029 33.9272C14.8273 33.7453 14.7166 33.5801 14.577 33.4411L11.115 30.0011H32.501C32.8988 30.0011 33.2804 29.843 33.5617 29.5617C33.843 29.2804 34.001 28.8989 34.001 28.5011C34.001 28.1032 33.843 27.7217 33.5617 27.4404C33.2804 27.1591 32.8988 27.0011 32.501 27.0011H11.133L14.569 23.5571C14.7083 23.4181 14.8188 23.253 14.8941 23.0713C14.9695 22.8896 15.0083 22.6948 15.0083 22.4981C15.0083 22.3013 14.9695 22.1065 14.8941 21.9248C14.8188 21.7431 14.7083 21.578 14.569 21.4391C14.2878 21.1582 13.9065 21.0004 13.509 21.0004C13.1115 21.0004 12.7303 21.1582 12.449 21.4391L6.555 27.3231L6.557 27.3211Z"
@@ -102,22 +110,22 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <div class="ml-5">
-              <span class="nav-container-text">Transactions</span>
+            <div className="ml-5">
+              <span className="nav-container-text">Transactions</span>
               <br />
-              <span class="nav-container-subtext">{User.transactions}</span>
+              <span className="nav-container-subtext">{User.transactions}</span>
             </div>
           </div>
 
-          <div class="nav-container-btn">
-            <div class="bg-[#333333] rounded-2xl">
+          <div className="nav-container-btn">
+            <div className="bg-[#333333] rounded-2xl">
               <svg
                 width="50"
                 height="50"
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="nav-container-icon"
+                className="nav-container-icon"
               >
                 <path
                   d="M18.4557 4.36592C18.9066 4.04592 19.4458 3.87402 19.9987 3.87402C20.5516 3.87402 21.0909 4.04592 21.5417 4.36592L33.2457 12.6699C34.6997 13.7019 33.9717 15.9939 32.1897 15.9979H7.81374C6.02574 15.9979 5.29374 13.7039 6.75374 12.6699L18.4557 4.36592ZM19.9997 11.7479C20.4419 11.7479 20.8659 11.5723 21.1785 11.2597C21.4911 10.947 21.6667 10.523 21.6667 10.0809C21.6667 9.63881 21.4911 9.2148 21.1785 8.90218C20.8659 8.58955 20.4419 8.41392 19.9997 8.41392C19.5576 8.41392 19.1336 8.58955 18.821 8.90218C18.5084 9.2148 18.3327 9.63881 18.3327 10.0809C18.3327 10.523 18.5084 10.947 18.821 11.2597C19.1336 11.5723 19.5576 11.7479 19.9997 11.7479ZM8.99974 17.9999V25.9999H12.9997V17.9999H8.99974ZM5.99974 32.3319C5.99974 29.9379 7.93974 27.9979 10.3317 27.9979H29.6657C30.815 27.9984 31.9171 28.4552 32.7298 29.2679C33.5424 30.0806 33.9992 31.1826 33.9997 32.3319V32.9979C33.9997 33.2631 33.8944 33.5175 33.7068 33.705C33.5193 33.8926 33.265 33.9979 32.9997 33.9979H6.99974C6.73452 33.9979 6.48017 33.8926 6.29263 33.705C6.10509 33.5175 5.99974 33.2631 5.99974 32.9979V32.3319ZM30.9997 17.9979V25.9979H26.9997V17.9999H30.9997V17.9979ZM24.9997 17.9979V25.9979H20.9997V17.9999H24.9997V17.9979ZM18.9997 17.9979V25.9979H14.9997V17.9999H18.9997V17.9979Z"
@@ -125,23 +133,23 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <div class="ml-5">
-              <span class="nav-container-text">Banks Accounts</span>
+            <div className="ml-5">
+              <span className="nav-container-text">Banks Accounts</span>
               <br />
-              <span class="nav-container-subtext">
+              <span className="nav-container-subtext">
                 {User.bank} Bank accounts
               </span>
             </div>
           </div>
-          <div class="nav-container-btn">
-            <div class="bg-[#333333] rounded-2xl">
+          <div className="nav-container-btn">
+            <div className="bg-[#333333] rounded-2xl">
               <svg
                 width="50"
                 height="50"
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="nav-container-icon"
+                className="nav-container-icon"
               >
                 <path
                   d="M5 13C5 11.9391 5.42143 10.9217 6.17157 10.1716C6.92172 9.42143 7.93913 9 9 9H31C32.0609 9 33.0783 9.42143 33.8284 10.1716C34.5786 10.9217 35 11.9391 35 13V16H5V13ZM5 18H35V27C35 28.0609 34.5786 29.0783 33.8284 29.8284C33.0783 30.5786 32.0609 31 31 31H9C7.93913 31 6.92172 30.5786 6.17157 29.8284C5.42143 29.0783 5 28.0609 5 27V18ZM27 26C26.7348 26 26.4804 26.1054 26.2929 26.2929C26.1054 26.4804 26 26.7348 26 27C26 27.2652 26.1054 27.5196 26.2929 27.7071C26.4804 27.8946 26.7348 28 27 28H31C31.2652 28 31.5196 27.8946 31.7071 27.7071C31.8946 27.5196 32 27.2652 32 27C32 26.7348 31.8946 26.4804 31.7071 26.2929C31.5196 26.1054 31.2652 26 31 26H27Z"
@@ -149,25 +157,25 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <div class="ml-5">
-              <span class="nav-container-text">Cards</span>
+            <div className="ml-5">
+              <span className="nav-container-text">Cards</span>
               <br />
-              <span class="nav-container-subtext">{User.cards} cards</span>
+              <span className="nav-container-subtext">{User.cards} cards</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="home-bottom-container">
-        <div class="home-bottom-container-respon">
+      <div className="home-bottom-container">
+        <div className="home-bottom-container-respon">
           <img src={DashImg} alt="" />
         </div>
-        <div class="home-bottom-left-btn-container">
-          <div class="home-bottom-left-text">
+        <div className="home-bottom-left-btn-container">
+          <div className="home-bottom-left-text">
             Start making payments through Vep and now you can send Invoice also.
           </div>
-          <div class="home-bottom-left-btn">
-            <div class="transfer-container">
+          <div className="home-bottom-left-btn">
+            <div className="transfer-container">
               <svg
                 width="24"
                 height="24"
@@ -180,9 +188,9 @@ export default function Home() {
                   fill="white"
                 />
               </svg>
-              <span class="home-bottom-left-transfer">Transfer</span>
+              <span className="home-bottom-left-transfer">Transfer</span>
             </div>
-            <div class="home-bottom-left-invoice-btn">
+            <div className="home-bottom-left-invoice-btn">
               <svg
                 width="24"
                 height="24"
@@ -195,11 +203,11 @@ export default function Home() {
                   fill="#BF13BF"
                 />
               </svg>
-              <span class="home-bottom-left-invoice">Send Invoice</span>
+              <span className="home-bottom-left-invoice">Send Invoice</span>
             </div>
           </div>
         </div>
-        <div class="bottom-img-responsive">
+        <div className="bottom-img-responsive">
           <img src={DashImg} alt="" />
         </div>
       </div>
