@@ -3,6 +3,13 @@
   font-family: "Raleway";
 }
 
+.image {
+  margin-right: 0.5rem;
+  border-radius: 9999px;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 .transaction-top-container {
   display: flex;
   justify-content: space-between;
@@ -40,6 +47,11 @@
 .transaction-grid {
   display: grid;
   place-items: center;
+}
+
+.transaction-grid > hr {
+  width: 91.666667%;
+  color: #dadada;
 }
 
 .transaction-items-container {
@@ -102,14 +114,8 @@
   }
 }
 
-.transaction-hidden{
-    @media (min-width: 768px) { 
-        display: none; 
-       }
-}
-
-
-.transaction-line{
-    width: 91.666667%; 
-color: #DADADA;
+.transaction-hidden {
+  @media (min-width: 768px) {
+    display: none;
+  }
 }

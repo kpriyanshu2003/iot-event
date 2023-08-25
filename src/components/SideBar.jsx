@@ -6,7 +6,7 @@ export default function SideBar(props) {
   return (
     <div className="sidebar-container">
       <Link to="/">
-        <img src={dashicon} alt="" className="" />
+        <img src={dashicon} alt="" />
       </Link>
       <div
         className="sidebar-cursor"

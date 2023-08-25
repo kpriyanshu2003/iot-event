@@ -12,10 +12,10 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="login" element={<Login />} />
-          <Route path="signup" element={<Signup />} />
-          <Route path="success" element={<Success />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/success" element={<Success />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>

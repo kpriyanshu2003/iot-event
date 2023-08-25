@@ -51,7 +51,7 @@ function TransMain() {
     <div className="transaction-grid" key={index}>
       <div className="transaction-items-container">
         <div className="transaction-items">
-          <img src={Avatar} alt="" className="rounded-full h-10 w-10 mr-2" />
+          <img src={Avatar} alt="" className="image" />
           <span className="transaction-semibold">
             {handleFrom(i.from, i.type)}
           </span>
@@ -73,12 +73,12 @@ function TransMain() {
         </div>
         <div className="transaction-bold">
           <span className="transaction-hidden">Amount: </span>
-          <span class={`text-[#${i.type === "credit" ? "29CC7A" : "333333"}]`}>
+          <span style={{ color: i.type === "credit" ? "#29cc7a" : "#333333" }}>
             &#x20B9; {i.amount}
           </span>
         </div>
       </div>
-      <hr className="transaction-line" />
+      <hr />
     </div>
   ));
 

@@ -27,9 +27,7 @@ export default function Dashboard() {
   };
   return (
     <div>
-      <div className="">
-        <SideBar update={update} value={current.id} />
-      </div>
+      <SideBar update={update} value={current.id} />
       <div className="dashboard-container">{current.page}</div>
     </div>
   );
