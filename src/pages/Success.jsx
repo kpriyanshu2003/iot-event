@@ -68,7 +68,6 @@ export default function Success() {
               />
             </svg>
             <span>
-              {" "}
               Account verification is pending, you can verify your account
               through the mail sent to your email.
             </span>

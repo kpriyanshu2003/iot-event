@@ -17,8 +17,7 @@ export default function Dashboard() {
         break;
       case "wallet":
       case "user":
-      case "notif":
-      case "logout":
+      case "notifs":
         alert("Coming Soon");
         break;
       default:
